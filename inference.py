@@ -9,7 +9,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 if __name__ == '__main__':
 
-    task = 'hover'  # 'hover' or 'landing'
+    task = 'landing'  # 'hover' or 'landing'
 
     if task == 'hover':
         path_to_bg_img = './resources/hover.jpg'

@@ -19,7 +19,7 @@ if __name__ == '__main__':
     else:
         path_to_bg_img = './resources/landing.jpg'
 
-    max_m_episode = 1000
+    max_m_episode = 3000
     max_steps = 800
 
     env = Rocket(task=task, max_steps=max_steps, path_to_bg_img=path_to_bg_img)
