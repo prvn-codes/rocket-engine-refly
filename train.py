@@ -12,14 +12,14 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 if __name__ == '__main__':
 
-    task = 'landing'  # 'hover' or 'landing'
+    task = 'hover'  # 'hover' or 'landing'
 
     if task == 'hover':
         path_to_bg_img = './resources/hover.jpg'
     else:
         path_to_bg_img = './resources/landing.jpg'
 
-    max_m_episode = 3000
+    max_m_episode = 5000
     max_steps = 800
 
     env = Rocket(task=task, max_steps=max_steps, path_to_bg_img=path_to_bg_img)

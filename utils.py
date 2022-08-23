@@ -45,7 +45,7 @@ def create_rectangle_poly(center, w, h):
     return pts
 
 
-################ Let's do some math... ####################
+################  do math... ####################
 
 def scale_matrix(sx=1.0, sy=1.0, sz=1.0):
 

@@ -22,9 +22,6 @@ def calculate_returns(next_value, rewards, masks, gamma=0.99):
 class PositionalMapping(nn.Module):
     """
     Positional mapping Layer.
-    This layer map continuous input coordinates into a higher dimensional space
-    and enable the prediction to more easily approximate a higher frequency function.
-    See NERF paper for more details (https://arxiv.org/pdf/2003.08934.pdf)
     """
 
     def __init__(self, input_dim, L=5, scale=1.0):
